@@ -10,9 +10,28 @@ public class Function {
 }
 	public int reverse(int number) {
 	
-	int numberReverse = 0
+	int numberReverse = 0;
 	while(number != 0) {
-		numberReverse = numberReverse * 10 + numberReverse % 10;
+
+		numberReverse = numberReverse * 10 + (number % 10);
+		number = number / 10;
 	}
-	}
+	return numberReverse;
+}
+	public int power(int firstNumber, int secondNumber) {
+		int counter = 1;
+		int exponent = 1;
+
+		if(secondNumber == 0) {
+		    return exponent;
+
+		} else {
+			while(counter <= secondNumber) { 
+				exponent = (exponent * firstNumber);
+
+			counter = counter + 1;
+		}
+		return exponent;
+		}
+}
 }

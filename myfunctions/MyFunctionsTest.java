@@ -21,4 +21,20 @@ public class MyFunctionsTest {
 		
 		assertEquals(54321, result);
 }
+	@Test
+	public void testingIfPowerFunctionWorks() {
+		Function calculate = new Function();
+	
+		int result = calculate.power(2, 3);
+		
+		assertEquals(8, result);
+}
+	@Test
+	public void testingIfPowerFunctionCanTestForWhenSecondNumberIsZero() {
+		Function calculate = new Function();
+		
+		int result = calculate.power(2, 0);
+		
+		assertEquals(1, result);
+}
 }
