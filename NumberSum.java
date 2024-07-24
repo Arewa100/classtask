@@ -14,6 +14,7 @@ public class NumberSum {
 	while(counter <= 10) {
 		System.out.print("Enter a number:  ");
 			number = input.nextInt();
+
 			int firstInstance = (number % 2);
 			int secondInstance = (number % 2);
 
