@@ -1,8 +1,8 @@
 public class Encryption {
 	public static void main(String[] args) {
 		int numbers = -1678;
-		int fourth = (numbers % 10) + 3;
-		int firstDivision = numbers / 10;
+		int fourth = (numbers % 10) + 3;   //8
+		int firstDivision = numbers / 10; 
 		int third = (firstDivision % 10) + 3; 
 		int secondDivision = firstDivision / 10;
 		int second = (secondDivision % 10) + 3;
@@ -12,8 +12,6 @@ public class Encryption {
 		int secondNumber = (second % 10);
 		int thirdNumber = (third % 10);
 		int fourthNumber = (fourth % 10);
-		
-		Cryptography data = new Cryptography();
 
 		int[] numberSwap = {thirdNumber, fourthNumber, firstNumber, secondNumber};
 
