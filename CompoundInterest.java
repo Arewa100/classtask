@@ -22,7 +22,7 @@ public class CompoundInterest {
 		
 	int numberOfMonth = (years * 12);
 	
-	double requiredRate = (rate/100);
+	double requiredRate = (rate/100);    
 	
 	int counter = 1;
 	
