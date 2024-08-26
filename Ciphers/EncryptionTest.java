@@ -5,5 +5,10 @@ public class CipherTest {
 	
 	@Test
 	public void testingIfFunctionToEncryptTextUsingCeaserEncryptionCAnWorkProperly() {
+		Cipher feedback = new Cipher();
+		
+		String cipherText = feedback.encrypt("miracle");
+		
+		assertEquals("pludfoh", ciphertext);
 	}
 }
