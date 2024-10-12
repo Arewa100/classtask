@@ -7,16 +7,13 @@ public class Polling {
     public int getNumberOfIssues() {
         return 5;
     }
-    public Topic getTopic() {
-        return listOfTopics;
-    }
 
     public int[][] getResponse() {
         return response;
     }
 
     public void setResponse(Topic topic, int column) {
-        Topic[] issues = listOfTopics.values();
+        Topic[] issues = Topic.values();
         for(Topic issue: issues) {
             if(topic.equals(issue)) {
                 response[issue.ordinal()][column] = response[issue.ordinal()][column] + 1;

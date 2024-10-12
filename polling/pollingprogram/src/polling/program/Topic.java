@@ -8,7 +8,7 @@ public enum Topic {
     ENVIRONMENTAL_ISSUE("global warming is a major issue");
 
 
-    private String description;
+    private final String description;
     Topic(String description) {
         this.description = description;
     }

@@ -22,8 +22,8 @@ public class PollingTest {
     @DisplayName("test that issues can be gotten by name")
     public void test_That_Issues_Can_Be_Gotten_By_Name() {
         Polling polling = new Polling();
-        assertEquals(5, polling.getNumberOfIssues());
-        Topic[] issues = polling.getTopic().values();
+        Topic[] issues = Topic.values();
+        assertEquals(issues.length, polling.getNumberOfIssues());
         assertEquals("PATERNITY_FRAUD", issues[1].name());
     }
     @Test
@@ -73,6 +73,10 @@ public class PollingTest {
         assertEquals(1, responses[0][8]);
         polling.setResponse(Topic.POLITICAL_ISSUE, 8);
         assertEquals(2, responses[0][8]);
+        polling.setResponse(Topic.PATERNITY_FRAUD, 8);
+        assertEquals(1, responses[1][8]);
+        polling.setResponse(Topic.PATERNITY_FRAUD, 8);
+        assertEquals(2, responses[1][8]);
 
     }
 }
